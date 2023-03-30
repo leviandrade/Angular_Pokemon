@@ -1,0 +1,13 @@
+<h1>Pokemons (Total: {{retorno.count}})</h1>
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <th>Nome</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pokemon of retorno.results">
+            <td>{{pokemon.name}}</td>
+        </tr>
+    </tbody>
+</table>
+<button (click)="anterior()">Anterior</button>
+<button (click)="proximo()">Próximo</button>
